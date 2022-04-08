@@ -21,12 +21,13 @@ body {
 	height: 100px;
 	margin: 5px;
 	padding: 5px;
-	border: 4px solid #EE872A;
+	border: 4px solid #c7551f;
 	cursor: pointer;
-	border-radius: 10px;
+	border-radius: 20px;
 	box-shadow: 0 1px 5px rgba(0,0,0,.5);
-  background: #B1B1B1;
+  background: #d0c6c6;
 	z-index: 2;
+	background: linear-gradient(45deg, #c7551f,rgb(218, 188, 188));
 }
 #boxcard div img {
 	display: none;
@@ -40,14 +41,14 @@ body {
 }
 #boxbuttons .button {
 	text-transform: uppercase;
-	background: #EE872A;
-	padding: 5px 10px;
+	background: #cb0f0f;
+	padding: 7px 10px;
 	margin: 5px;
 	border-radius: 10px;
 	cursor: pointer;
 }
 #boxbuttons .button:hover {
-	background: #999;
+	background: rgb(194, 177, 177);
 }
 img{
     width: 100px;

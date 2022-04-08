@@ -1,6 +1,3 @@
-const mieImg = ["arrabbiato", "bello", "piangere", "ridere", "amare", "amare1", "spavento", "shock", "arrabbiato", "bello",
-    "piangere", "ridere", "amare", "amare1", "spavento", "shock"];
-
 
     var BoxOpened = "";
 var ImgOpened = "";
@@ -9,7 +6,7 @@ var ImgFound = 0;
 
 var Source = "#boxcard";
 
-var ImgSource = [
+var mieImg = [
     'img/amare.png',
     'img/amare1.png',
     'img/arrabbiato.png',
@@ -96,7 +93,7 @@ function OpenCard() {
 		Counter++;
 		$("#counter").html("" + Counter);
 
-		if (ImgFound == ImgSource.length) {
+		if (ImgFound == mieImg.length) {
 			$("#counter").prepend('<span id="success">Congratulazioni hai vinto! </span>');
 		}
 	}
@@ -105,7 +102,7 @@ function OpenCard() {
 $(function() {
 
 for (var y = 1; y < 3 ; y++) {
-	$.each(ImgSource, function(i, val) {
+	$.each(mieImg, function(i, val) {
 		$(Source).append("<div id=card" + y + i + "><img src=" + val + " />");
 	});
 }
